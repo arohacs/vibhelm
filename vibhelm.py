@@ -14,7 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-#!/usr/bin/env python2
+#!/usr/bin/env python
 import subprocess
 from subprocess import PIPE, Popen, STDOUT, call
 import sys

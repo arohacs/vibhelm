@@ -5,21 +5,41 @@
 [site]: http://www.adamrohacs.com "adamrohacs.com website"
 [license]: http://www.gnu.org/licenses/gpl.html "gnu.org license"
 [repo]: https://github.com/arohacs/vibhelm "vibhelm repository"
-
+[contact id]: http://www.adamrohacs.com/contact "Contact Adam Rohacs"
 **Vi**rtual **B**ox **Helm** (vibhelm) by [Adam Rohacs][site] is licensed under a [GNU General Public License][license] and is based on a work at [github.com][repo].  
- 
-### Version information
-This is a python 2.7.x script and may not work correctly or at all when invoked by python 3. Please check your version by typing: python -V  
 
-[helm def]: http://www.thefreedictionary.com/helm
-### Why the name?
+### Anatomy of the project name
 I wanted to make a unique name for this software which included something related to commanding a ship. I immediately thought of **helm**, which is the  
 [driving mechanism of a ship][helm def]:
  
 1. Nautical The steering gear of a ship, especially the tiller or wheel.
 2. A position of leadership or control: at the helm of the government.  
 
-Further, I wanted to attach an abbreviation of VirtualBox to "helm", but was concerned that using "VB" would confuse folks who are used to dot net terminology, and so I lengthened the typical abbreviation to "vib", which formed a nonsense, and hopefully *catchy* word to name the project.
+Further, I wanted to attach an abbreviation of [VirtualBox][vbox def] to "helm", but was concerned that using "VB" would confuse folks who are used to dot net terminology, and so I lengthened the typical abbreviation to "vib", which formed a nonsense, and hopefully *catchy* word to name the project.
+### Version information
+This is a python 2.7.x script and may not work correctly or at all when invoked by python 3. Please check your version by typing: python -V  
+
+#### OS Platform support and Testing
+This program has been tested with Python 2.7 under virtualenvs and with python2 on Arch Linux.  Most windows folks seem to use VMWare with Hypervisor anyway, so this may not apply. If you are using a non Unix/Linux platform, I'm guessing that raw strings might be the only change needed, if anything is needed. 
+
+If you test this program on any platform (Unix, Linux, FreeBSD, Mac OSX, Windows xx, etc.) and find issues, please [contact][contact id] me and I'll update the README and possibly make another version for your platform. Also, you could fork this repo and let me know the name of your repository and I will link to it. 
+
+[helm def]: http://www.thefreedictionary.com/helm
+[vbox def]: https://www.virtualbox.org/
+
+
+[git clone url]: http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
+
+### Usage
+[Clone][git clone url] the repository to a directory of your choice: 
+$ git clone git://github.com/arohacs/vibhelm.git
+
+Run the program with python version 2.7, for example:   
+$ python vibhelm.py  
+For Arch Linux and other distributions that separate python by version:
+$ python2 vibhelm.py 
+
+Follow the menus - you should be fine. Remember that "Shutdown" aborts the virtual machine. 
 
 ### Features
 
